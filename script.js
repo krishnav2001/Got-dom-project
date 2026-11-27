@@ -1,5 +1,5 @@
 import "./style.css";
-
+import { got } from "./got-data.js";
 const searchInput = document.querySelector("#search-input");
 const houseFiltersEl = document.querySelector("#house-filters");
 const cardsGridEl = document.querySelector("#cards-grid");
