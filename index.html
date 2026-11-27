@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GOT</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body class="bg-slate-100 text-slate-900">
+        <div class="main flex flex-col w-screen min-h-screen">
+            <header
+                class="flex min-h-[160px] w-full flex-col items-center justify-center gap-4 bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-400 px-4 py-6 text-center shadow-sm mb-2"
+            >
+                <div class="flex w-full max-w-xl flex-col items-center gap-4">
+                    <h1
+                        class="heading w-full text-center text-4xl font-bold text-white "
+                    >
+                        People of GOT 👑
+                    </h1>
+                    <input
+                        id="search-input"
+                        type="search"
+                        placeholder="Search the people of GOT"
+                        aria-label="Search the people of GOT"
+                        class="w-80 rounded-[10px] border-2 border-amber-50 bg-amber-50 px-3.5 py-2 text-sm text-slate-900 placeholder-gray-400 outline-none transition focus:ring-3 focus:ring-white/60 sm:text-base"
+                    />
+                </div>
+
+            </header>
+            <nav
+                id="house-filters"
+                aria-label="Filter by house"
+                class="mb-8 flex flex-wrap justify-center gap-2"
+            ></nav>
+            <section id="cards-grid" class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 px-4 pb-12 sm:grid-cols-2 lg:grid-cols-3">
+
+            </section>
+        </div>
+        <script src="./got-data.js"></script>
+     <script type="module" src="script.js"></script>
+    </body>
+</html>
